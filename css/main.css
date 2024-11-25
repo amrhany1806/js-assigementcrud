@@ -1,0 +1,71 @@
+body{
+    background-color: #f7ecde;
+    height: 100vh;
+}
+
+
+*{
+    box-sizing: border-box;
+}
+
+main h1{
+    font-family: "Pacifico", cursive;
+    font-size: 50px;
+    z-index: 2;
+    
+}
+
+.bookmark-body{
+    border-width: 2px 0 2px 0;
+    border-style: dotted;
+    border-color: #352e28
+}
+
+#sumbiturl{
+    background-color: #d1512d;
+    color: white;
+}
+
+
+h1:hover::before{
+    height: 50%;
+}
+main h1::before {
+    content: "";
+    position: absolute;
+    width: 24%;
+    height: 25%;
+    left: 20;
+    bottom: 10px;
+    background-color: #fec260;
+    transition: height 350ms;
+    z-index: -1;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+
+}
+
+.alt{
+    padding: 30px;
+    border-radius: 3%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    
+}
+
+.alt button{
+    left: 550px;
+    top: 20px;
+}
+
+#modal{
+    display: none;
+}
+
+.hdd{
+    color: #93aa4e;
+}

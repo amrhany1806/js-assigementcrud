@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Pacifico&display=swap"
+        rel="stylesheet">
+    <title>Bookmark</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body class="position-relative">
+    <main class="py-5 ">
+        <div class="container d-flex justify-content-center align-content-center flex-column ">
+
+            <h1 class="py-2 text-center position-relative">
+
+                Bookmarker
+
+            </h1>
+
+            <div class=" bookmark-body  d-flex  flex-column  p-3 py-4 mt-5 gap-4">
+
+                <h2 class="text-center fs-4 hdd"><i class="fa-solid fa-bookmark"></i>
+                    Bookmark your favorite sites
+                    <i class="fa-solid fa-bookmark"></i>
+                </h2>
+                <div class="site-name " id="inpu">
+                    <label for="BookmarkName" class="pb-2 fw-semibold">
+                        <i class="fa-solid fa-book-bookmark pe-2"></i>
+                        Site Name
+                    </label>
+                    <input type="text" class="form-control" placeholder="Bookmark Name" id="BookmarkName">
+                </div>
+                <div class="site-URL  mt-4">
+                    <label for="BookmarkURL" class="pb-2 fw-semibold">
+                        <i class="fa-solid fa-link pe-2"></i>
+                        Site URL
+                    </label>
+                    <input type="url" class="form-control" placeholder="Website URL" id="BookmarkURL">
+                </div>
+                <button onclick="add()" type="submit" class="px-5 btn  m-auto " id="sumbiturl">Sumbit</button>
+
+            </div>
+
+
+
+
+
+            <table class="table mt-4 text-center bg-light">
+                <thead>
+                    <tr>
+                        <th>Index</th>
+                        <th>Website Name</th>
+                        <th>Visit</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+                <tbody id="dataTable">
+
+                </tbody>
+            </table>
+
+            <div class="w-50 bg-white  alt position-absolute shadow-lg " id="modal">
+                <i class="fa-solid fa-circle p-1 text-danger"></i>
+                <i class="fa-solid fa-circle p-1 text-success"></i>
+                <i class="fa-solid fa-circle p-1 text-warning"></i>
+                <button class="btn border-0 position-absolute" id="closeElement"><i
+                        class="fa-solid fa-xmark close fs-3 "></i></button>
+                <br><br>
+                <h4>Site Name or Url is not valid, Please follow the rules below :</h4>
+                <br>
+                <div class="fs-5">
+                    <i class="fa-regular fa-circle-right p-2"> </i>
+                    Site name must contain at least 3 characters
+                </div>
+                <br><br>
+                <div class="fs-5">
+                    <i class="fa-regular fa-circle-right p-2"> </i>
+                    Site URL must be a valid one
+                </div>
+            </div>
+
+        </div>
+
+
+
+    </main>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
